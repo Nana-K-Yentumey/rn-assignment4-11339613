@@ -6,7 +6,10 @@ const PopularJobs = () => {
     return (
             
   <View style={styles.container}>
-    <Text style={styles.title}>Popular Jobs</Text>
+    <View flexDirection='row'>
+                <Text style={styles.Categories}>Popular Jobs</Text>
+                <Text style={styles.seeall}>See all</Text>
+                </View>
   <PopularCards  imageSource={require('./assets/bgking.png')}  JobTitle={'Jr Executive'} salary={'$96,000/y'} employer={'Burger King'} location={'Los Angeles, US'} />
   <PopularCards  imageSource={require('./assets/fcbook.png')}  JobTitle={'Product Manager'} salary={'$84,000/y'} employer={'Facebook'} location={'Florida, US'} />
   <PopularCards  imageSource={require('./assets/beatz.png')}  JobTitle={'Product Manager'} salary={'$86,000/y'} employer={'Beats'} location={'Florida, US'} />
@@ -36,6 +39,20 @@ const styles = StyleSheet.create({
         margin: 20,
         marginLeft: 20,
     },
+
+    Categories: {
+
+      fontWeight: 'bold',
+      fontSize: 17,
+      margin: 20,
+      marginLeft: 20,
+  },
+  seeall: {
+      margin: 20,
+      marginLeft: 140,
+      justifyContent: 'space-between',
+      color: '#95969D',
+  },
 
 
 

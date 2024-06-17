@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { View, Text, TextInput, Button, StyleSheet, Pressable, Image } from 'react-native';
+import { View, Text, TextInput, StyleSheet, Pressable, Image } from 'react-native';
 import Welcome from './Welcome';
 
 function LoginScreen({ navigation }) {
@@ -10,8 +10,7 @@ function LoginScreen({ navigation }) {
     if (name && email) {
       navigation.navigate('  ', { name, email });
     } else {
-      //alert('Please fill in both fields');
-      navigation.navigate('  ', { name, email });
+      alert('Please fill in both fields');
     }
   };
 
