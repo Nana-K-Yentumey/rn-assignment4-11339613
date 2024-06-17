@@ -4,13 +4,6 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import LoginScreen from './LoginScreen';
 import HomeScreen from './HomeScreen';
-/*<NavigationContainer>
-      <Stack.Navigator initialRouteName="Login">
-        <Stack.Screen name=" " component={LoginScreen} />
-      </Stack.Navigator>
-    </NavigationContainer>
-
-*/
 
 const Stack = createNativeStackNavigator();
 

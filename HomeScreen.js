@@ -1,6 +1,7 @@
 import React from 'react';
 import { View, Text, StyleSheet, Image, ScrollView } from 'react-native';
 import Categories from './Categories';
+import PopularJobs from './PopularJobs';
 
 function HomeScreen({ route }) {
   const { name, email } = route.params;
@@ -18,6 +19,8 @@ function HomeScreen({ route }) {
         <Image style={{alignSelf: 'center'}} source={require('./assets/Search.png')} />
     </View>
     <Categories />
+
+    <PopularJobs />
 
     </ScrollView>
   );
