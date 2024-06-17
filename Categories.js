@@ -1,13 +1,9 @@
 import React from "react";
 import { StyleSheet, Text, View, Image, ScrollView } from "react-native";
+import FeaturedCards from "./FeaturedCards";
 
-const Categories = () => {
-    return (
-        <View>
-            
-            <Text style={styles.Categories}>Featured Jobs</Text>
-            <ScrollView horizontal={true} showsHorizontalScrollIndicator={false} style={styles.cardsSection}>
-                <View style={styles.facebookCard}>
+/*
+<View style={styles.facebookCard}>
                     <View style={{flex: 1, flexDirection: 'row', marginBottom: 40 }} >
                     <Image style={{width: 47, height: 47, marginLeft: 10, marginTop: 25}} source={require('./assets/facebooklogo.png')} />
                     <View style={{margin: 10}}>
@@ -121,6 +117,22 @@ const Categories = () => {
                     </View> 
                        
                 </View>
+*/
+
+const Categories = () => {
+    return (
+        <View>
+            
+            <Text style={styles.Categories}>Featured Jobs</Text>
+            <ScrollView horizontal={true} showsHorizontalScrollIndicator={false} style={styles.cardsSection}>
+                <FeaturedCards imageSource={require('./assets/fcbook.png')}  JobTitle={'Software Engineer'} salary={'$100,000/y'} employer={'Facebook'} location={'Accra, Ghana'} />
+                <FeaturedCards imageSource={require('./assets/googlelogo.png')}  JobTitle={'Frontend Developer'} salary={'$90,000/y'} employer={'Google'} location={'LA, USA'} />
+                <FeaturedCards imageSource={require('./assets/amazonlogo.png')}  JobTitle={'Data Analyst'} salary={'$110,000/y'} employer={'Amazon'} location={'Remote'} />
+                <FeaturedCards imageSource={require('./assets/activisionlogo.png')}  JobTitle={'Frontend Developer'} salary={'$100,000/y'} employer={'Facebook'} location={'Accra, Ghana'} />
+                <FeaturedCards imageSource={require('./assets/bgking.png')}  JobTitle={'System Administrator'} salary={'$100,000/y'} employer={'Facebook'} location={'Accra, Ghana'} />
+                <FeaturedCards imageSource={require('./assets/beatz.png')}  JobTitle={'Sound Engineer'} salary={'$100,000/y'} employer={'Facebook'} location={'Accra, Ghana'} />
+                <FeaturedCards imageSource={require('./assets/googlelogo.png')}  JobTitle={'Backend Developer'} salary={'$100,000/y'} employer={'Facebook'} location={'Accra, Ghana'} />
+                <FeaturedCards imageSource={require('./assets/amazonlogo.png')}  JobTitle={'Delivery Driver'} salary={'$100,000/y'} employer={'Facebook'} location={'Accra, Ghana'} />
             </ScrollView>
         
         </View>
